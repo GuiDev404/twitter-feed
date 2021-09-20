@@ -1,0 +1,225 @@
+:root {
+  --font:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --main-color: #1d9bf0;
+  --main-color-text: #fff;
+  --border-color: #ebebeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font);
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.header__title {
+  font-size: 21px;
+}
+
+.length-content {
+  font-size: small;
+}
+
+.text-danger {
+  color: rgb(235, 12, 12);
+}
+
+.container {
+  width: 550px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  min-height: 100vh !important;
+}
+
+.form {
+  width: 100%;
+  margin: 5px;
+}
+
+.form__tweet {
+  width: calc(100% - 25px);
+  max-width: 100%;
+  
+  max-height: 30%; 
+  min-height: 50px;
+
+  overflow: hidden;
+  resize: none;
+  
+  font-size: 20px;
+  font-family: var(--font);
+  padding: 10px 5px;
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.form__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% - 30px);
+}
+
+.general-button {
+  border-radius: 30px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-small {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+ 
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+
+.general-button:disabled {
+  opacity: .6;
+} 
+
+.form__add-button,
+.form__cancel-button  {
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  margin: 5px 0;
+}
+
+.form__add-button-text {
+  color: var(--main-color-text);
+  font-size: 15px;
+}
+
+.form__cancel-button {
+  background: #f0f0f0;
+}
+
+.form__add-button-text {
+  font-size: 15px;
+}
+
+.tweet {
+  font-size: 16px;
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
+  width: calc(100% - 5px);
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.tweet_header_and_content {
+  margin-left: 10px;
+}
+
+.tweet_header .img-profile {
+  margin: 0;
+}
+
+.tweet__content {
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.tweet__username {
+  font-size: small;
+  color: rgb(70, 70, 70);
+}
+
+.full {
+  width: 100% !important;
+}
+
+.options-tweet,
+.options-tweet-bottom {
+  margin-top: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options-tweet-bottom {
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 55px;
+  margin-top: 5px;
+}
+
+.actions {
+  position: relative;
+}
+
+.actions-buttons {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 125px;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 0 5px 5px;
+}
+
+.action-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.action-button-text {
+  padding-top: 2px;
+  font-size: 15px;
+}
+
+.no-tweets {
+  text-align: center;
+  color: rgb(54, 54, 54) ;
+  margin: 50px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.img-profile {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    width: 100%;
+  }
+}
